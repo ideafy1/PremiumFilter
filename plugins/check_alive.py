@@ -14,7 +14,7 @@ async def help(_, message):
 
 @Client.on_message(filters.command("credits", CMD))
 async def help(_, message):
-    await message.reply_text("Tʜɪs Is Cᴏᴅᴇᴅ Bʏ @SpidyRockss\n\Tʜᴀɴᴋs Tᴏ Eᴠᴀ Mᴀʀɪᴇ ﹝ ʙᴀsᴇ ᴄᴏᴅᴇ ﹞")
+    await message.reply_text("Tʜɪs Is Cᴏᴅᴇᴅ Bʏ @SpidyRockss\n\n  Tʜᴀɴᴋs Tᴏ Eᴠᴀ Mᴀʀɪᴇ ﹝ ʙᴀsᴇ ᴄᴏᴅᴇ ﹞")
 
 @Client.on_message(filters.command("movies", CMD))
 async def movie(_, message):
