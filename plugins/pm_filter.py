@@ -1,4 +1,3 @@
-# Codeded By @Tamilan_BotsZ
 import asyncio
 import re
 import ast
