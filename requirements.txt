@@ -12,6 +12,7 @@ bs4
 imdbpy==2022.7.9
 heroku3
 datetime
+aiofiles==22.1.0
 telegraph==2.2.0
 youtube-search-python
 youtube-search
@@ -30,3 +31,4 @@ wget
 pytz
 Flask==2.2.2
 gunicorn==20.1.0
+aiohttp==3.8.3
