@@ -18,7 +18,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6459209111:AAGSkOMUEPebYtK0JFUA1iILRJmGOGW
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/54f7a3e8b55522e7d74ae.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/4767004d8095009b56cab.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5089010547 1867884587').split()]
@@ -37,11 +37,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_file')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001528659895'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'yedekho_in')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'yedekho_faq')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>━━━━━━━━━━•••••━━━━━━━━━\n🍿 Find any movie - https://t.me/+aJkUib8zVb05NDVl\n🏘 Backup - @MOVIES_HUB_ALPHA\n❤️ SHARE AND SUPPORT US</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>━━━━━━━━━━•••••━━━━━━━━━\n🍿 Lookup Your Content - https://telegram.me/yedekho\n🏘 Get Recommendations - @yedekho_in\n❤️ Share me and Earn RESPECT 💪 🤑 </b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -63,12 +63,12 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/Sharath_Links/13')
+HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://telegram.me/yedekho/24068')
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 100))
 
 FILE_REQ_CHANNEL = int(environ.get('-1001828784633', LOG_CHANNEL))
 
-SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'tnshort.net') #Put Only Shortner Site domain don't put like this https://tnlink.in/
+SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'api.shareus.io') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
-SHORTNER_API =  environ.get('SHORTNER_API', 'b31bf3bf6df36137e35426424f4bd9a171aea230')
+SHORTNER_API =  environ.get('SHORTNER_API', 'fMDCfdHbglU811sJLQSQMinDXCB3')
