@@ -1,31 +1,30 @@
 class script(object):
-  START_TXT = """<b>Hᴇʏ {} ɪᴍ 『 𝙼𝚘𝚟𝚒𝚎𝚜 𝚑𝚞𝚋 𝚊𝚕𝚙𝚑𝚊 』 ᴀɴ Aᴡᴇsᴏᴍᴇ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ + Fɪʟᴇ Sʜᴀʀᴇ Bᴏᴛ.
-Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
+  START_TXT = """<b>𝘩𝘦𝘺 😚 {} 𝘺𝘰𝘶 𝘭𝘰𝘰𝘬 𝘭𝘰𝘯𝘦𝘭𝘺 , 𝘪 𝘤𝘢𝘯 𝘩𝘦𝘭𝘱 😍\n 𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰</b>"""
 
-  HELP_TXT = """<b>Hᴇʏ {} Fʀɪᴇɴᴅ Hᴇʀᴇ Yᴏᴜʀ Bᴜᴛᴛᴏɴs 👇</b>"""
+  HELP_TXT = """<b>hey {} if you need help, here are your buttons 👇</b>"""
 
-  PRIVATEBOT_TXT = """<b>Tʜᴀɴᴋs Fᴏʀ Aᴅᴅɪɴɢ Mᴇ
+  PRIVATEBOT_TXT = """<b>𝘩𝘦𝘺𝘢𝘢 𝘯𝘰𝘸 𝘩𝘦𝘳𝘦 𝘪'𝘮, 𝗜'𝗟𝗟 𝗖𝗛𝗔𝗡𝗚𝗘 𝗬𝗢𝗨𝗥 𝗔𝗧𝗠𝗢𝗦𝗣𝗛𝗘𝗥𝗘 😉 😌 😍
 
-- ›› Mᴜsᴛ Aᴅᴅ Mᴇ Aᴅᴍɪɴ Tᴏ Wᴏʀᴋ Oɴ Tʜɪs Gʀᴏᴜᴘ
+- ›› 𝘆𝗼𝘂 𝗸𝗻𝗼𝘄 𝘄𝗵𝗮𝘁 😌 𝗜 𝘄𝗶𝗹𝗹 𝗯𝗲 𝗺𝗶𝗿𝗮𝗰𝘂𝗹𝗼𝘂𝘀𝗹𝘆 𝘃𝗮𝗹𝘂𝗮𝗯𝗹𝗲 𝗮𝘀𝘀𝗲𝘁 𝗮𝘀 𝗮𝗻 𝗮𝗱𝗺𝗶𝗻 🤓
 
-- ›› Cʜᴀɴɢᴇ Sᴇᴛᴛɪɴɢ Fᴏʀ Uʀ Gʀᴏᴜᴘ Cʟɪᴄᴋ 👉 /connect
+- ›› Change settings for your group 👉 /connect
 
-- ›› I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs/Sᴇʀɪᴇs Dᴏɴ'ᴛ Wᴏʀʀʏ
+- ›› I'll find something you'll love and enjoy 
 
 - ›› Eɴᴊᴏʏ !! Mᴏʀᴇ Iɴғᴏ Usᴇ Uɴᴅᴇʀ Bᴜᴛᴛᴏɴs</b>
 """
 
-  MODS_TXT = """I Hᴀᴠᴇ Mᴀɴʏ Fᴇᴀᴛᴜʀᴇs"""
+  MODS_TXT = """I'm more than what your eyes see 😉."""
 
   PONGD_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
 
   PONG_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
 
-  ABOUT_TXT = """<b>🤖 ᴍᴍʏ ɴᴀᴍᴇ: <a href=hhttps://t.me/MOVIES_HUB_ALPHAᴍMOVIES SEARCH BOT/a>
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Sharathitsisme>sʜᴀʀᴀᴛʜ</a>
-📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
-📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
-📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=https://www.heroku.com/>HEROKU</a>
+  ABOUT_TXT = """<b>🤖 +: <a href=https://t.me/yedekho>YeDekho Content Search Engine 🔍 /a>
+👨‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 : <a href=https://t.me/ideafy>KHRISH</a>
+📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : ᴘʏʀᴏɢʀᴀᴍ
+📚 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞 : ᴘʏᴛʜᴏɴ 3
+📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href=https://www.heroku.com/>HEROKU</a>
 📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+zH3wFHYZdDM5NWJl>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 🌟 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>.</b>"""
 
