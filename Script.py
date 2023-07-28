@@ -1,5 +1,5 @@
 class script(object):
-  START_TXT = """<b>𝘩𝘦𝘺 😚 {} 𝘺𝘰𝘶 𝘭𝘰𝘰𝘬 𝘭𝘰𝘯𝘦𝘭𝘺 , 𝘪 𝘤𝘢𝘯 𝘩𝘦𝘭𝘱 😍\n 𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰</b>"""
+  START_TXT = """<b>𝘩𝘦𝘺 😚 {} 𝘺𝘰𝘶 ☝🏻 𝘭𝘰𝘰𝘬 𝘭𝘰𝘯𝘦𝘭𝘺 , 𝘪 𝘤𝘢𝘯 𝘩𝘦𝘭𝘱 😍\n 𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰</b>"""
 
   HELP_TXT = """<b>hey {} if you need help, here are your buttons 👇</b>"""
 
@@ -22,19 +22,19 @@ class script(object):
 
   ABOUT_TXT = """<b>🤖 +: <a href=https://t.me/yedekho>YeDekho Content Search Engine 🔍 /a>
 👨‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 : <a href=https://t.me/ideafy>KHRISH</a>
-📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : ᴘʏʀᴏɢʀᴀᴍ
-📚 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞 : ᴘʏᴛʜᴏɴ 3
-📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href=https://www.heroku.com/>HEROKU</a>
-📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+zH3wFHYZdDM5NWJl>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-🌟 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>.</b>"""
+📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : pฯr໐ງrคm
+📚 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞 : pฯth໐ຖ 3
+📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href=https://www.render.com/>RENDER</a>
+📢 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 : <a href=https://t.me/yedekho_faq>𝘛𝘖𝘜𝘊𝘏 𝘔𝘌 👩🏻‍🦰</a>
+🌟 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://t.me/about_yedekho/2>𝘽𝙀𝘼𝙏 𝘔𝘌 👩🏻‍🦰</a>.</b>"""
 
-  SOURCES_TXT = """Tʜɪs Is Aɴ Pʀᴏᴊᴇᴄᴛ Bʏ @SpidyRockss
+  SOURCES_TXT = """This is a Creation of @spidyrockss
 
-- 100﹪ Cᴏᴅᴇᴅ Bʏ <a href=https://t.me/SpidyRockss>Khrish</a>"""
+- designed and shaped by <a href=https://t.me/ideafy>ADITYA</a>"""
 
-  SOURCE_TXT = """Tʜɪs Pʀᴏᴊᴇᴄᴛ Is Bʏ @SpidyRockss</b>
+  SOURCE_TXT = """We,re in existance due to @spidyrockss</b>
 
-- 100﹪ Cᴏᴅᴇᴅ Bʏ <a href=https://t.me/SpidyRockss>Khrish</a></b>"""
+- and idea of <a href=https://t.me/ideafy>ideafy</a></b>"""
 
   FONT_TXT = """I Cᴀɴ Gᴇɴᴇʀᴀᴛᴇ Aᴛᴛʀᴀᴄᴛɪᴠᴇ Fᴏɴᴛs Fᴏʀ Yᴏᴜʀ Tᴇxᴛ Sᴇɴᴅ Lɪᴋᴇ Tʜɪs 👇
 
@@ -69,9 +69,9 @@ class script(object):
 <b>Aɴᴅ Bᴏᴛ Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Asᴋᴇᴅ Fɪʟᴇ</b>"""
 
   CONTACT_TXT = """<b>
-<b>»» ° Oɴʟʏ Cᴏɴᴛᴀᴄᴛ Fᴏʀ Pᴀɪᴅ Wᴏʀᴋs / Pʀᴏʙʟᴇᴍ / Dᴏᴜʙᴛ / Cᴏʟʟᴀʙ / Hᴇʟᴩ °</b>
+<b>»» ° 𝙔𝙤𝙪 𝙬𝙖𝙣𝙣𝙖 𝙢𝙚𝙚𝙩 𝙬𝙞𝙩𝙝 𝙢𝙮 𝙘𝙧𝙚𝙖𝙩𝙤𝙧,🤫 talk only for Paid Works / Pʀᴏʙʟᴇᴍ / Dᴏᴜʙᴛ / Cᴏʟʟᴀʙ / Hᴇʟᴩ °</b>
 
-<b>»» Iғ U Cᴏɴᴛᴀᴄᴛ Mᴇ Sᴇᴇ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴs 😙</b>
+<b>»» TOUCH BUTTTONS BELOW TO FIGURE OUT CONTANTS 🤳🏻 😙</b>
 """
 
   STATUS_TXT = """<b><u>Cᴜʀʀᴇɴᴛ Dᴀᴛᴀʙᴀsᴇ Sᴛᴀᴛᴜs</b></u>
