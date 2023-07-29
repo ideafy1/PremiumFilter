@@ -21,7 +21,7 @@ disabled_group=filters.create(disabled_chat)
 @Client.on_message(filters.private & banned_user & filters.incoming)
 async def ban_reply(bot, message):
     ban = await db.get_ban_status(message.from_user.id)
-    await message.reply(f'sᴏʀʀʏ ᴜ ʀᴇ ʙᴀɴɴᴇᴅ ʙʏ ᴀᴅᴍɪɴ. \nʙᴀɴ ʀᴇᴀsᴏɴ: {ban["ban_reason"]}')
+    await message.reply(f'𝙎𝙤𝙧𝙧𝙮, 𝙮𝙤𝙪'𝙧𝙚 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙗𝙖𝙣𝙣𝙚𝙙 𝙗𝙮 𝙖𝙙𝙢𝙞𝙣 \nʙᴀɴ ʀᴇᴀsᴏɴ: {ban["ban_reason"]}')
 
 @Client.on_message(filters.group & disabled_group & filters.incoming)
 async def grp_bd(bot, message):
