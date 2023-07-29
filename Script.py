@@ -1,5 +1,5 @@
 class script(object):
-  START_TXT = """hey {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\n don't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰"""
+  START_TXT = """hey {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\ndon't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰\n<b>Let me</b> 𝘤𝘩𝘢𝘯𝘨𝘦 <b>your</b>𝘢𝘵𝘮𝘰𝘴𝘱𝘩𝘦𝘳𝘦 😎</b>"""
 
   HELP_TXT = """<b>hey {} if you need help, here are your buttons 👇</b>"""
 
@@ -19,13 +19,13 @@ class script(object):
 
   PONG_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
 
-  ABOUT_TXT = """<b>🤖 +: <a href=https://t.me/yedekho>YeDekho Content Search Engine 🔍 /a>
+  ABOUT_TXT = """🤖 : YeDekho Content Search Engine🔍
 👨‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 : <a href=https://t.me/ideafy>KHRISH</a>
 📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : pฯr໐ງrคm
 📚 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞 : pฯth໐ຖ 3
 📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href=https://www.render.com/>RENDER</a>
 📢 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 : <a href=https://t.me/yedekho_faq>𝘛𝘖𝘜𝘊𝘏 𝘔𝘌 👩🏻‍🦰</a>
-🌟 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://t.me/about_yedekho/2>𝘽𝙀𝘼𝙏 𝘔𝘌 👩🏻‍🦰</a>.</b>"""
+🌟 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://t.me/about_yedekho/2>𝘽𝙀𝘼𝙏 𝘔𝘌 👩🏻‍🦰</a>"""
 
   SOURCES_TXT = """This is a Creation of @spidyrockss
 
