@@ -1,5 +1,5 @@
 class script(object):
-  START_TXT = """hey {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\ndon't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰\n<b>Let me</b> 𝘤𝘩𝘢𝘯𝘨𝘦 <b>your</b>𝘢𝘵𝘮𝘰𝘴𝘱𝘩𝘦𝘳𝘦 😎</b>"""
+  START_TXT = """hey {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\ndon't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰\n\n<b>Let me</b> 𝘤𝘩𝘢𝘯𝘨𝘦 <b>your</b> 𝘢𝘵𝘮𝘰𝘴𝘱𝘩𝘦𝘳𝘦 😎</b>"""
 
   HELP_TXT = """<b>hey {} if you need help, here are your buttons 👇</b>"""
 
