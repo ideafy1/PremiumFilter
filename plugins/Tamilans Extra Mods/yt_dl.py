@@ -43,7 +43,7 @@ async def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
 
-        cap = "**BY›› [𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸](https://t.me/MOVIES_HUB_ALPHA)**"
+        cap = "**BY›› [𝘠𝘦𝘋𝘦𝘬𝘩𝘰 𝘚𝘱𝘦𝘤𝘪𝘢𝘭𝘴](https://t.me/yedekho)**"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -82,7 +82,7 @@ def get_text(message: Message) -> [None,str]:
 @Client.on_message(filters.command(["video", "mp4"]))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
-    pablo = await client.send_message(message.chat.id, f"**Fɪɴᴅɪɴɢ Yᴏᴜʀ Vɪᴅᴇᴏ** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**LOOKING FOR YOUR VIDEO 🤔** `{urlissed}`")
     if not urlissed:
         return await pablo.edit("Iɴᴠᴀʟɪᴅ Cᴏᴍᴍᴇɴᴛ Sʏɴᴛᴀx!")     
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
