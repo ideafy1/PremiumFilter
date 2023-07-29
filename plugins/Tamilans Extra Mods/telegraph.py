@@ -10,15 +10,15 @@ from utils import get_file_id
 async def telegraph_upload(bot, update):
     replied = update.reply_to_message
     if not replied:
-        await update.reply_text("Rᴇᴩʟʏ Tᴏ A Pʜᴏᴛᴏ / Vɪᴅᴇᴏ Uɴᴅᴇʀ 5ᴍʙ")
+        await update.reply_text("REPLY TO A PHOTO / VIDEO UNDER 5mb")
         return
     file_info = get_file_id(replied)
     if not file_info:
-        await update.reply_text("Nᴏᴛ Sᴜᴩᴩᴏʀᴛᴇᴅ Mᴇᴅɪᴀ Tʏᴩᴇ !")
+        await update.reply_text("NOT SUPPORTED MEDIA TYPE !")
         return
     text = await update.reply_text(text="<code>Dᴏᴡɴʟᴏᴀᴅɪɴɢ Iɴ Mʏ Sᴇʀᴠᴇʀ...</code>", disable_web_page_preview=True)   
     media = await update.reply_to_message.download()   
-    await text.edit_text(text="<code>Dᴏᴡɴʟᴏᴀᴅ Tᴏ Mʏ Sᴇʀᴠᴇʀ Is Cᴏᴍᴩʟᴇᴛᴇ. Nᴏᴡ IᴀM Uᴩʟᴏᴀᴅɪɴɢ Tᴏ Tᴇʟᴇɢʀᴀᴩʜ ...</code>", disable_web_page_preview=True)                                            
+    await text.edit_text(text="<code>DOWNLOADING TO MY SERVER IS COMPLETE. NOW I AM UPLOADING YOUR FILES TO TELEGRAM 🙌🏻 ...</code>", disable_web_page_preview=True)                                            
     try:
         response = upload_file(media)
     except Exception as error:
