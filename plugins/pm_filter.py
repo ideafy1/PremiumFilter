@@ -185,13 +185,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Tʜᴇʀᴇ ᴀʀᴇ ɴᴏ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ!! Cᴏɴɴᴇᴄᴛ ᴛᴏ ꜱᴏᴍᴇ ɢʀᴏᴜᴘꜱ ғɪʀꜱᴛ.", quote=True)
-                    return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+                    return await query.answer(' YeDekho Search Engine ')
             else:
                 await query.message.edit_text(
                     "Iᴀᴍ Nᴏᴛ Cᴏɴɴᴇᴄᴛᴇᴅ Tᴏ Aɴʏ Gʀᴏᴜᴩ \nCʜᴇᴄᴋ /connections Oʀ Cᴏɴɴᴇᴄᴛ Tᴏ Aɴʏ Gʀᴏᴜᴩ",
                     quote=True
                 )
-                return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+                return await query.answer(' YeDekho Search Engine ')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
@@ -252,7 +252,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+        return await query.answer(' YeDekho Search Engine ')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+        return await query.answer(' YeDekho Search Engine ')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -296,7 +296,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Sᴏᴍᴇ Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+        return await query.answer(' YeDekho Search Engine ')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -314,7 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Sᴏᴍᴇ Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+        return await query.answer(' YeDekho Search Engine ')
     elif query.data == "backcb":
         await query.answer()
 
@@ -325,7 +325,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+            return await query.answer(' YeDekho Search Engine ')
         buttons = []
         for groupid in groupids:
             try:
@@ -604,9 +604,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "contact":
         buttons = [[
-            InlineKeyboardButton('😳 Cʀᴇᴀᴛᴏʀ 😳', url='https://t.me/SpidyRockss')
+            InlineKeyboardButton('😳 Cʀᴇᴀᴛᴏʀ 😳', url='https://t.me/ideafy')
         ], [     
-            InlineKeyboardButton('📞 Cᴏɴᴛᴀᴄᴛ 📟', url='https://t.me/SpidyRockss')
+            InlineKeyboardButton('📞 Cᴏɴᴛᴀᴄᴛ 📟', url='https://t.me/yedekho')
         ], [  
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='about')
         ], [
@@ -706,7 +706,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer(' 𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸 ')
+    await query.answer(' YeDekho Search Engine ')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -717,7 +717,6 @@ async def auto_filter(client, msg, spoll=False):
         if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
             return
         if 2 < len(message.text) < 100:
-            search = message.text
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
                 await client.send_message(file_req_channel,f"-🦋 #REQUESTED_FILE 🦋-\n\n📝Fɪʟᴇ Nᴀᴍᴇ :{search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.first_name}\n\n Usᴇʀ Iᴅ :{message.from_user.id}\n\n🗃Cᴏᴅᴇᴅᴇᴅ Bʏ  @SpidyRockss",
@@ -933,3 +932,5 @@ async def manual_filters(client, message, text=False):
                 break
     else:
         return False
+
+            search = message.text
