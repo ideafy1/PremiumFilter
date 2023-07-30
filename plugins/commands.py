@@ -42,14 +42,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 😎➕', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton('➕ BEGIN MY JOURNEY WITH YOU 😎➕', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('⚡ 𝗥𝗘𝗖𝗢𝗠𝗠𝗘𝗡𝗗𝗔𝗧𝗜𝗢𝗡𝗦 💖', url='https://t.me/yedekho_in/58'),
-            InlineKeyboardButton('🔎 𝗦𝗘𝗔𝗥𝗖𝗛 𝗘𝗡𝗚𝗜𝗡𝗘 🔍', url='https://t.me/yedekho')
+            InlineKeyboardButton('⚡ RECOMMENDATIONS 💖', url='https://t.me/yedekho_in/58'),
+            InlineKeyboardButton('🔎 SEARCH ENGINE 🔍', url='https://t.me/yedekho')
             ],[
-            InlineKeyboardButton('📍𝘼𝘽𝙊𝙐𝙏 & 𝙄𝙉𝙁𝙊 🧐', callback_data= 'about')
+            InlineKeyboardButton('📍BACK-END 🧐', callback_data= 'about')
             ],[
-            InlineKeyboardButton('😙 𝗦𝗘𝗘 𝗬𝗢𝗨 𝗔𝗚𝗔𝗜𝗡 🫡', callback_data='close_data')
+            InlineKeyboardButton('😙 SEE YOU SOON 😙', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
