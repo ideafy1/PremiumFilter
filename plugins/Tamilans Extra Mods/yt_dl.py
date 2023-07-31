@@ -43,7 +43,7 @@ async def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
 
-        cap = "**BY›› [𝕄𝕆𝕍𝕀𝔼𝕊 ℍ𝕌𝔹 𝔸𝕃ℙℍ𝔸](https://t.me/MOVIES_HUB_ALPHA)**"
+        cap = "**BY›› [YeDekho Search Engine 🔍](https://t.me/yedekho_in)**"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -59,7 +59,7 @@ async def song(client, message):
         )            
         await m.delete()
     except Exception as e:
-        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        await m.edit("**🚫 ERROR 🚫**")
         print(e)
     try:
         os.remove(audio_file)
@@ -115,7 +115,7 @@ async def vsong(client, message: Message):
         return await pablo.edit_text(f"**𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙵𝚊𝚒𝚕𝚎𝚍 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗..♥️** \n**Error :** `{str(e)}`")       
     
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"""**ᴛɪᴛʟᴇ :** [{thum}]({mo})\n**ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}"""
+    capy = f"""**ᴛɪᴛʟᴇ :** [{thum}]({mo})\n**REQUESTED BY:** {message.from_user.mention}"""
 
     await client.send_video(
         message.chat.id,
