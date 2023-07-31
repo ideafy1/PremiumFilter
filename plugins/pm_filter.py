@@ -454,17 +454,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
          )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 UPDATES 😜', url='https://t.me/yedekho_in'),
-            InlineKeyboardButton('♥️ SHARE ME 💫', url=f"https://t.me/share/url?url=t.me/{temp.U_NAME}")
+            InlineKeyboardButton('💁 UPDATE 💡', url='https://t.me/yedekho_in'),
+            InlineKeyboardButton('♥️ REFER 🤩', url=f"https://t.me/share/url?url=t.me/{temp.U_NAME}")
         ], [
-            InlineKeyboardButton('🔭 STATS 📊', callback_data='stats'),
-            InlineKeyboardButton('📞 CONTACT 📟', callback_data='contact')
+            InlineKeyboardButton('📈 STATS 📊', callback_data='stats'),
+            InlineKeyboardButton('📞 CONTACT 😳', callback_data='contact')
         ], [
-            InlineKeyboardButton('😜 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Fɪʟᴇs Fʀᴏᴍ Mᴇ 😜', callback_data='info')
+            InlineKeyboardButton('😻 HOW TO USE ME 🥰', callback_data='info')
         ], [
-            InlineKeyboardButton('👋 Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs 👋', callback_data='mods')
+            InlineKeyboardButton('🤯 I CAN DO A LOT MORE 😍', callback_data='mods')
         ], [
-            InlineKeyboardButton('📦 Cʜᴇᴄᴋ Pɪɴɢ 📡', callback_data='pongd')
+            InlineKeyboardButton('📦 CHECK PING 📡', callback_data='pongd')
         ], [
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='start')
         ]]
