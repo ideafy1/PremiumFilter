@@ -442,7 +442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡ RECOMMENDATIONS 💖', url='https://t.me/yedekho_in/58'),
             InlineKeyboardButton('🔎 SEARCH ENGINE 🔍', url='https://t.me/yedekho')
             ],[
-            InlineKeyboardButton('📍BACK-END 🧐', callback_data= 'about')
+            InlineKeyboardButton('📍BACK-END & EXTRAS 🧐', callback_data= 'about')
             ],[
             InlineKeyboardButton('😙 SEE YOU SOON 🙋🏻‍♀️', callback_data='close_data')
         ]]
@@ -466,7 +466,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('📦 CHECK PING 📡', callback_data='pongd')
         ], [
-            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('‹‹‹⬅ GO BACK', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
