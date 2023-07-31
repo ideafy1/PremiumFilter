@@ -40,17 +40,17 @@ async def fil_mod(client, message):
       try: 
          args = message.text.split(None, 1)[1].lower() 
       except: 
-         return await message.reply("**Iɴᴄᴏᴍᴩʟᴇᴛᴇ Cᴏᴍᴍᴀɴᴅ...**")
+         return await message.reply("**INCOMPLETE COMMAND...**")
       
-      m = await message.reply("**Sᴇᴛᴛɪɴɢs.../**")
+      m = await message.reply("**SETTINGS.../**")
 
       if args in mode_on:
           FILTER_MODE[str(message.chat.id)] = "True" 
-          await m.edit("**Aᴜᴛᴏ-Fɪʟᴛᴇʀ Eɴᴀʙʟᴇᴅ**")
+          await m.edit("**AUTO-FILTER ENABLED**")
       
       elif args in mode_of:
           FILTER_MODE[str(message.chat.id)] = "False"
-          await m.edit("**Aᴜᴛᴏ-Fɪʟᴛᴇʀ Dɪsᴀʙʟᴇᴅ**")
+          await m.edit("**AUTO-FILTER DISABLED**")
       else:
           await m.edit("Usᴇ :- /autofilter on Oʀ /autofilter off")
 
@@ -72,7 +72,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer("aee, i dont remember that message, Please request new one😇.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -115,8 +115,8 @@ async def next_page(bot, query):
         off_set = offset - 6
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("‹‹‹ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pᴀɢᴇs {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+            [InlineKeyboardButton("‹‹‹ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📃 PAGES {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
@@ -126,13 +126,13 @@ async def next_page(bot, query):
     else:
         btn.append(
             [
-                InlineKeyboardButton("‹‹‹ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("‹‹‹ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("Nᴇxᴛ ›››", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("😌 Cʜᴇᴄᴋ Bᴏᴛ PM 😌", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("😌 CHECK MY DM MESSAGE 😌", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -147,14 +147,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("sᴇᴀʀᴄʜ ʏᴏᴜʀsᴇʟғ", show_alert=True)
+        return await query.answer("SEARCH YOURSELF PLEASE", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
+        return await query.answer("I really don't remember that button, request again 😇.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Iᴀᴍ Cʜᴇᴄᴋɪɴɢ U Asᴋᴇᴅ Fɪʟᴇ Iɴ Mʏ Dʙ...')
+    await query.answer('SEARCHING THE ENIRE UNIVERSE 🧐...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-             k = await query.message.edit('Sᴏʀʀʏ Pʟᴇᴀsᴇ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴩᴇʟʟɪɴɢ Iɴ Gᴏᴏɢʟᴇ Fɪʀsᴛ ﹦ Iғ Yᴏᴜʀ Sᴩᴇʟʟɪɴɢ Cᴏʀʀᴇᴄᴛ Mᴇᴀɴs Tʜᴀᴛ Fɪʟᴇ Nᴏᴛ Fᴏᴜʙᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ 💌')
+             k = await query.message.edit('I'LL SUGGEST TO CHECK THAT SPELLING ON GOOGLE ﹦ IF YOU TYPED IT CORRECT, I'M SORRIE 😢 I'LL GET IT FOR YOU SOON 🥺 💌')
              await asyncio.sleep(30)
              await k.delete()
 
@@ -184,11 +184,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("Tʜᴇʀᴇ ᴀʀᴇ ɴᴏ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ!! Cᴏɴɴᴇᴄᴛ ᴛᴏ ꜱᴏᴍᴇ ɢʀᴏᴜᴘꜱ ғɪʀꜱᴛ.", quote=True)
+                    await query.message.edit_text("THERE ARE NO ACTIVE CONNECTIONS , CONNECT ME TO A GROUP PLEASE.", quote=True)
                     return await query.answer(' doing maths ')
             else:
                 await query.message.edit_text(
-                    "Iᴀᴍ Nᴏᴛ Cᴏɴɴᴇᴄᴛᴇᴅ Tᴏ Aɴʏ Gʀᴏᴜᴩ \nCʜᴇᴄᴋ /connections Oʀ Cᴏɴɴᴇᴄᴛ Tᴏ Aɴʏ Gʀᴏᴜᴩ",
+                    "I AM NOT CONNECTED TO ANY GROUPS\nCʜᴇᴄᴋ /connections OR CONNECT TO ANY GROUP",
                     quote=True
                 )
                 return await query.answer(' CODING ')
