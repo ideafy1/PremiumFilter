@@ -20,12 +20,12 @@ class script(object):
   PONG_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
 
   ABOUT_TXT = """YeDekho Search Engine 🔍\n\n
-🧠 BRAIN : <a href=https://t.me/ideafy>telegram</a>
-🔤 LANGUAGE : not english 😏
-💀 FRAMEWORK : 🐍3
-🏡 HOME : <a href=https://www.render.com/>RENDER</a>
-🧐 SUPPORT: <a href=https://t.me/yedekho_faq>TOUCH ME</a>
-🐣 SOURCE : <a href=https://t.me/about_yedekho/2>BEAT ME</a>"""
+🧠 BRAIN : <a href=https://t.me/ideafy>telegram</a>\n\n
+🔤 LANGUAGE : not english 😏\n\n
+💀 FRAMEWORK : 🐍3\n\n
+🏡 HOME : <a href=https://www.render.com/>RENDER</a>\n\n
+🧐 SUPPORT: <a href=https://t.me/yedekho_faq>TOUCH ME</a>\n\n
+🐣 SOURCE : <a href=https://t.me/about_yedekho/2>BEAT ME</a>"""\n\n
 
   SOURCES_TXT = """Marvelous creation of yedekho devs ✅⚡ @yedekho
 
