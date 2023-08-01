@@ -1,5 +1,5 @@
 class script(object):
-  START_TXT = """hey {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\ndon't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰\n\n<b>Let me</b> 𝘤𝘩𝘢𝘯𝘨𝘦 <b>your</b> 𝘢𝘵𝘮𝘰𝘴𝘱𝘩𝘦𝘳𝘦 😎</b>"""
+  START_TXT = """hey ☝🏻 {} you look 𝘭𝘰𝘯𝘦𝘭𝘺 🥺\ndon't worry, I'll fix that 👀\n\n𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘸𝘰𝘳𝘭𝘥'𝘴 ⚡️ 𝘤𝘰𝘰𝘭𝘦𝘴𝘵 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 𝘴𝘦𝘢𝘳𝘤𝘩 𝘦𝘯𝘨𝘪𝘯𝘦 ! 𝘠𝘦𝘋𝘦𝘬𝘩𝘰\n\n<b>Let me</b> 𝘤𝘩𝘢𝘯𝘨𝘦 <b>your</b> 𝘢𝘵𝘮𝘰𝘴𝘱𝘩𝘦𝘳𝘦 ⚡</b>"""
 
   HELP_TXT = """<b>hey {} if you need help, here are your buttons 👇</b>"""
 
@@ -8,85 +8,85 @@ class script(object):
 - ›› You know, I'll be extremely valueable asset as an admin 😁
 - ›› Change settings for your group 👉 /connect
 
-- ›› I'll find something you'll love and enjoy 
+- ›› I'll find something you'll love and enjoy 🍿⚡
 
-- ›› Eɴᴊᴏʏ !! Mᴏʀᴇ Iɴғᴏ Usᴇ Uɴᴅᴇʀ Bᴜᴛᴛᴏɴs</b>
+- ›› ENJOY !! USE BUTTONS 👇🏻 FOR MORE INFORMATION</b>
 """
 
   MODS_TXT = """I'm more than what your eyes see 😉."""
 
-  PONGD_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
+  PONGD_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
 
-  PONG_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
+  PONG_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
 
-  ABOUT_TXT = """🤖 : YeDekho Content Search Engine🔍
-👨‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 : <a href=https://t.me/ideafy>KHRISH</a>
-📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : pฯr໐ງrคm
-📚 𝗙𝗥𝗔𝗠𝗘𝗪𝗢𝗥𝗞 : pฯth໐ຖ 3
-📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href=https://www.render.com/>RENDER</a>
-📢 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 : <a href=https://t.me/yedekho_faq>𝘛𝘖𝘜𝘊𝘏 𝘔𝘌 👩🏻‍🦰</a>
-🌟 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://t.me/about_yedekho/2>𝘽𝙀𝘼𝙏 𝘔𝘌 👩🏻‍🦰</a>"""
+  ABOUT_TXT = """🤖 : YeDekho Search Engine 🔍
+🧠 BRAIN : <a href=https://t.me/ideafy>telegram</a>
+🔤 LANGUAGE : not english 😏
+💀 FRAMEWORK : 🐍☝🏻☝🏻☝🏻 (guess it)
+🏚️ HOME 🏠 : <a href=https://www.render.com/>RENDER</a>
+🧐 SUPPORT: <a href=https://t.me/yedekho_faq>TOUCH ME 😏👩🏻‍🦰</a>
+🐣 SOURCE : <a href=https://t.me/about_yedekho/2>BEAT ME 😏👩🏻‍🦰</a>"""
 
-  SOURCES_TXT = """This is a Creation of @spidyrockss
+  SOURCES_TXT = """Marvelous creation of yedekho devs ✅⚡ @yedekho
 
 - designed and shaped by <a href=https://t.me/ideafy>ADITYA</a>"""
 
-  SOURCE_TXT = """We,re in existance due to @spidyrockss</b>
+  SOURCE_TXT = """We,re in existance due to @yedekho</b>
 
-- and idea of <a href=https://t.me/ideafy>ideafy</a></b>"""
+- and brain of <a href=https://t.me/ideafy>ideafy</a></b>"""
 
-  FONT_TXT = """I Cᴀɴ Gᴇɴᴇʀᴀᴛᴇ Aᴛᴛʀᴀᴄᴛɪᴠᴇ Fᴏɴᴛs Fᴏʀ Yᴏᴜʀ Tᴇxᴛ Sᴇɴᴅ Lɪᴋᴇ Tʜɪs 👇
+  FONT_TXT = """I CAN ALSO GENRATE ATTRACTIVE FONTS FOR YOU \nTYPE LIKE THIS 👇🏻
 
-ᴇɢ :- /font hi da"""
+ᴇɢ :- /font i am tisha"""
 
   CARBON_TXT = """/carbon ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜
 
 ᴇɢ :- /carbon hi"""
 
-  SHARE_TXT = """/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜
+  SHARE_TXT = """We sometimes want to \nGet a link for pre-written text that we can send to anyone 👁️👁️\n HERE IT IS 🤩
 
 ᴇɢ :- /share hi da"""
 
-  VIDEO_TXT = """Dᴏᴡɴʟᴏᴀᴅ Aɴʏ Yᴏᴜᴛᴜʙᴇ Vɪᴅᴇᴏ Fʀᴏᴍ Tʜᴇ Vɪᴅᴇᴏ Lɪɴᴋ
+  VIDEO_TXT = """WANNA DOWNLOAD A YOUTUBE VIDEO, INSTANTLY 😏\nHERE I AM 
 
-• Hᴏᴡ Tᴏ Usᴇ
-• Tʏᴘᴇ /video 𝘈𝘯𝘥 (YᴏᴜTᴜʙᴇ Vɪᴅᴇᴏ Lɪɴᴋ)
-• Exᴀᴍᴘʟᴇ:
-• /video https://youtu.be/kB9TkCscX0"""
+• HOW TO USE 🤔
+• Type /video 𝘈𝘯𝘥 (YOUTUBE VIDEO LINK)
+• EXAMPLE:
+• /video https://youtu.be/HquoQgu3ep4"""
 
-  TELE_TXT = """▫️Hᴇʟᴘ: ▪️ Tᴇʟᴇɢʀᴀᴘʜ ▪️
-     Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ
-    Usᴀɢᴇ
-    🤧 /telegraph - Sᴇɴᴅ Mᴇ Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ Uɴᴅᴇʀ (5ᴍʙ)"""
+  TELE_TXT = """▫️HELP: ▪️ TELEGRAPH ▪️
+     TELEGRAPH LINK GENERATOR
+    HOW TO 💀
+    🤧 /telegraph - SEND A PHOTO (jpeg, gif, png) OR A VIDEO - UNDER (5MB)"""
 
-  MANUELFILTER_TXT = """<b>Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇs / Sᴇʀɪᴇs Usɪɴɢ Tʜɪs Bᴏᴛ</b> 😌 🔋
+  MANUELFILTER_TXT = """<b>HOW TO DOWNLOAD CONTENT USING ME</b> 😌 🔋
 
-<b>Fɪʀsᴛ Jᴏɪɴ Tʜɪs Gʀᴏᴜᴩ » @MOVIES_HUB_ALPHA</b>
+JOIN MY SOURCE FIRST » @yedekho
 
-<b>Sᴇɴᴅ Yᴏᴜ Wᴀɴᴛ Mᴏᴠɪᴇs Oʀ Sᴇʀɪᴇs Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ</b>
+<b>TYPE YOUR CONTENT WITH 100% EXACT SPELLING</b>
 
-<b>Aɴᴅ Bᴏᴛ Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Asᴋᴇᴅ Fɪʟᴇ</b>"""
+<b>YOU WILL BE SENT BUTTONS, SELECT WHAT YOU LIKE AND ENJOY 🤩</b>"""
 
   CONTACT_TXT = """<b>
-<b>»» ° 𝙔𝙤𝙪 𝙬𝙖𝙣𝙣𝙖 𝙢𝙚𝙚𝙩 𝙬𝙞𝙩𝙝 𝙢𝙮 𝙘𝙧𝙚𝙖𝙩𝙤𝙧,🤫 talk only for Paid Works / Pʀᴏʙʟᴇᴍ / Dᴏᴜʙᴛ / Cᴏʟʟᴀʙ / Hᴇʟᴩ °</b>
+<b>»» ° You can talk to the brain behind me\n🤫 communicate only for Paid Works / PROBLEM / DOUBT / ADVERTISING / HELP °</b>
 
-<b>»» TOUCH BUTTTONS BELOW TO FIGURE OUT CONTANTS 🤳🏻 😙</b>
+<b>»» TOUCH BUTTTONS BELOW TO FIGURE OUT 🤳🏻 😙</b>
 """
 
-  STATUS_TXT = """<b><u>Cᴜʀʀᴇɴᴛ Dᴀᴛᴀʙᴀsᴇ Sᴛᴀᴛᴜs</b></u>
+  STATUS_TXT = """<b><u>CURRENT BRAIN STATUS</b></u>
     
-<b>📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
-👩🏻‍💻 ᴜsᴇʀs: <code>{}</code>
-👥 ɢʀᴏᴜᴘs: <code>{}</code>
-🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
-🗄️ ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code></b>
+<b>📑 CONTENTS SAVED: <code>{}</code>
+👩🏻‍💻 USERS: <code>{}</code>
+👥 GROUP: <code>{}</code>
+🗂️ OCCUPIED: <code>{}</code>
+🗄️ FREE AREA: <code>{}</code></b>
 """
   LOG_TEXT_G = """<b> #NewGroup
-👥 ɢʀᴏᴜᴘ 👥 = {}(<code>{}</code>)
-😇 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs 😇 = <code>{}</code>
-💌 ᴀᴅᴅᴇᴅ ʙʏ 💌 - {} </b>
+👥 GROUP 👥 = {}(<code>{}</code>)
+😇 TOTAL MEMBERS 😇 = <code>{}</code>
+💌 ADDED BY 💌 - {} </b>
 """
   LOG_TEXT_P = """<b> #NewUser
-ɪᴅ ♥️- <code>{}</code>
-ɴᴀᴍᴇ 💥- {} </b>
+ID ♥️- <code>{}</code>
+NAME 💥- {} </b>
 """
