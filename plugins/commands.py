@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🤖', url='https://t.me/MOVIES_HUB_ALPHA')
+                InlineKeyboardButton('🤖 UPDATES🤖', url='https://t.me/yedekho_in')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝗛𝗘𝗟𝗣 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('ℹ️ HELP ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('⚡ RECOMMENDATIONS 💖', url='https://t.me/yedekho_in/58'),
             InlineKeyboardButton('🔎 SEARCH ENGINE 🔍', url='https://t.me/yedekho')
             ],[
-            InlineKeyboardButton('📍BACK-END 🧐', callback_data= 'about')
+            InlineKeyboardButton('📍BACK-END & EXTRAS 🧐', callback_data= 'about')
             ],[
             InlineKeyboardButton('😙 SEE YOU SOON 😙', callback_data='close_data')
         ]]
@@ -63,7 +63,7 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
-            logger.error("𝗠𝗔𝗞𝗘 𝗠𝗘 𝗔𝗗𝗠𝗜𝗡 𝗘𝗟𝗦𝗘 𝗜 𝗪𝗢𝗡'𝗧 𝗕𝗘 𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟 𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 😤")
+            logger.error("I'll get a lot powerful 🦾 if i stay as an admin  😤")
             return
         btn = [
             [
@@ -82,7 +82,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 TRY AGAIN 🔄", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**PLEASE 🥺 Join My Updates area to use me!**",
+            text="**JOIN UPDATES CHANNEL TO USE ME!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -96,7 +96,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('😅 BRAINS 🧠', callback_data='sources')
             ],[
-            InlineKeyboardButton('📍 BACK-END 🧐', callback_data= 'about')
+            InlineKeyboardButton('📍 BACK-END & EXTRAS 🧐', callback_data= 'about')
             ],[
             InlineKeyboardButton('😙 SEE YOU SOON 😙', callback_data='close_data')
         ]]
@@ -256,7 +256,7 @@ async def start(client, message):
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
-    """Send basic information of channel"""
+    """SEND BASIC INFORMATION OF CHANNEL"""
     if isinstance(CHANNELS, (int, str)):
         channels = [CHANNELS]
     elif isinstance(CHANNELS, list):
@@ -264,7 +264,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = '📑 **ɪɴᴅᴇxᴇᴅ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ**\n'
+    text = '📑 **KNOWN GROUP/CHANNEL**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -272,7 +272,7 @@ async def channel_info(bot, message):
         else:
             text += '\n' + chat.title or chat.first_name
 
-    text += f'\n\n**ᴛᴏᴛᴀʟ:** {len(CHANNELS)}'
+    text += f'\n\n**TOTAL:** {len(CHANNELS)}'
 
     if len(text) < 4096:
         await message.reply(text)
@@ -294,12 +294,12 @@ async def log_file(bot, message):
 
 @Client.on_message(filters.command('delete') & filters.user(ADMINS))
 async def delete(bot, message):
-    """Delete file from database"""
+    """DELETE FILE FROM MY BRAIN"""
     reply = message.reply_to_message
     if reply and reply.media:
         msg = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...⏳", quote=True)
     else:
-        await message.reply('Rᴇᴘʟʏ ᴛᴏ ғɪʟᴇ ᴡɪᴛʜ /Delete ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ', quote=True)
+        await message.reply('REPLY TO A FILE WITH /Delete THAT YOU WANT TO DELETE', quote=True)
         return
 
     for file_type in ("document", "video", "audio"):
@@ -307,7 +307,7 @@ async def delete(bot, message):
         if media is not None:
             break
     else:
-        await msg.edit('ᴛʜɪs ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ')
+        await msg.edit('THATS NOT A SUPPORTED 🫴 FILE')
         return
     
     file_id, file_ref = unpack_new_file_id(media.file_id)
@@ -316,7 +316,7 @@ async def delete(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        await msg.edit('ғɪʟᴇs ɪs ᴅᴇʟᴇᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ')
+        await msg.edit('FILES ARE DELETED FROM MY 🧠 BRAIN')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -337,7 +337,7 @@ async def delete(bot, message):
             if result.deleted_count:
                 await msg.edit('ғɪʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ')
             else:
-                await msg.edit('ғɪʟᴇs ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ')
+                await msg.edit('FILE NOT FOUND IN MY 🧠 BRAIN')
 
 
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
@@ -365,15 +365,15 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('ᴀᴍᴀᴢɪɴɢ ᴄᴏᴅᴇ ғʀᴏᴍ TᴀᴍɪʟBᴏᴛsZ')
-    await message.message.edit('sᴜᴄᴄᴇssғᴜʟʟ ᴅᴇʟᴇᴛᴇᴅ ɪɴᴅᴇxᴇᴅ ғɪʟᴇs')
+    await message.answer('DESIGNED BY YEDEKHO DEVs')
+    await message.message.edit('KICKED OFF ALL THE INDEXED FILES 🤩')
 
 
 @Client.on_message(filters.command('settings'))
 async def settings(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Yᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ. Uꜱᴇ /connect {message.chat.id} in PM")
+        return await message.reply(f"YOU ARE AN ANONYMOUS ADMIN. Uꜱᴇ /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -384,10 +384,10 @@ async def settings(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Mᴀᴋᴇ ꜱᴜʀᴇ I'ᴍ ᴘʀᴇꜱᴇɴᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ!!", quote=True)
+                await message.reply_text("MAKE SURE I'M PRESENT IN THE GROUP!!", quote=True)
                 return
         else:
-            await message.reply_text("I'ᴍ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴀɴʏ ɢʀᴏᴜᴘꜱ!", quote=True)
+            await message.reply_text("heyy, I am not connected to any groups!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -474,7 +474,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢꜱ ғᴏʀ {title} ᴀs ᴜʀ ᴡɪsʜ ⚙</b>",
+            text=f"<b>CHANGE THE SETTINGS FOR {title} AS YOU WANT ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode=enums.ParseMode.HTML,
@@ -488,7 +488,7 @@ async def save_template(client, message):
     sts = await message.reply("ᴄʜᴇᴄᴋɪɴɢ ᴛᴇᴍᴘʟᴀᴛᴇ")
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Yᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ. Uꜱᴇ /connect {message.chat.id} in PM")
+        return await message.reply(f"YOU ARE ANONYMOUS ADMIN. Uꜱᴇ /connect {message.chat.id} IN PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -499,7 +499,7 @@ async def save_template(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Mᴀᴋᴇ ꜱᴜʀᴇ I'ᴍ ᴘʀᴇꜱᴇɴᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ!!", quote=True)
+                await message.reply_text("MAKE SURE I AM PRESENT IN THE GROUP !!", quote=True)
                 return
         else:
             await message.reply_text("I'ᴍ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴀɴʏ ɢʀᴏᴜᴘꜱ!", quote=True)
