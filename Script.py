@@ -19,7 +19,7 @@ class script(object):
 
   PONG_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
 
-  ABOUT_TXT = """YeDekho Search Engine 🔍\n\n
+  ABOUT_TXT = """<b>YeDekho Search Engine 🔍</b>\n\n
 🧠 BRAIN : <a href=https://t.me/ideafy>telegram</a>
 🔤 LANGUAGE : not english 😏
 💀 FRAMEWORK : 🐍3
