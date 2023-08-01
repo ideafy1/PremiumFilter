@@ -15,9 +15,9 @@ class script(object):
 
   MODS_TXT = """I'm more than what your eyes see 😉."""
 
-  PONGD_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
+  PONGD_TXT = """CHECK HOW IS MY CONNECTION 💁🏻‍♂️\nTAP 👉🏻 /ping"""
 
-  PONG_TXT = """SEE HOW IS MY CONNECTION 💁🏻‍♂️ /ping"""
+  PONG_TXT = """CHECK HOW IS MY CONNECTION 💁🏻‍♂️\nTAP 👉🏻 /ping"""
 
   ABOUT_TXT = """<b>YeDekho Search Engine 🔍</b>\n\n
 🧠 BRAIN : <a href=https://t.me/ideafy>telegram</a>
@@ -63,12 +63,12 @@ class script(object):
 
 JOIN MY SOURCE FIRST » @yedekho
 
-<b>TYPE YOUR CONTENT WITH 100% EXACT SPELLING</b>
+<b>TYPE YOUR CONTENT WITH 100% EXACT SPELLING</b>\n
 
-<b>YOU WILL BE SENT BUTTONS, SELECT WHAT YOU LIKE AND ENJOY 🤩</b>"""
+<b>YOU WILL BE SENT BUTTONS\nSELECT WHAT YOU LIKE AND ENJOY 🤩</b>"""
 
   CONTACT_TXT = """<b>
-<b>»» ° You can talk to the brain behind me\n🤫 communicate only for Paid Works / PROBLEM / DOUBT / ADVERTISING / HELP °</b>
+<b>»» ° You can talk to my brain\n🤫 contact only for Paid Works\nPROBLEM\nDOUBT\nADVERTISING\nHELP °</b>
 
 <b>»» TOUCH BUTTTONS BELOW TO FIGURE OUT 🤳🏻 😙</b>
 """
