@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-             k = await query.message.edit('CHECK THAT SPELLING ??✅ ﹦ IF IT'S CORRECT, WE'LL GET IT SOON | SORRIE🥺')
+             k = await query.message.edit('CHECK THAT SPELLING ?? ﹦ IF CORRECT I WILL GET IT SOON SORRIE🥺')
              await asyncio.sleep(30)
              await k.delete()
 
@@ -184,7 +184,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("THERE AREN'T ACTIVE CONNECTIONS , CONNECT TO GROUPS.", quote=True)
+                    await query.message.edit_text("THERE ARE NO ACTIVE CONNECTIONS , CONNECT ME TO GROUPS.", quote=True)
                     return await query.answer(' doing maths ')
             else:
                 await query.message.edit_text(
