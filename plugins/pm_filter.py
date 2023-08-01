@@ -72,7 +72,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("aee, i dont remember that message, Please request new one😇.", show_alert=True)
+        await query.answer("i dont remember that, Please request AGAIN😇.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -132,7 +132,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("😌 CHECK MY DM MESSAGE 😌", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("😌 CHECK MY DM 😌", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -147,14 +147,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("SEARCH YOURSELF PLEASE", show_alert=True)
+        return await query.answer("SEARCH YOURSELF", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("I really don't remember that button, request again 😇.", show_alert=True)
+        return await query.answer("I don't remember that, request again 😇.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('SEARCHING THE ENIRE UNIVERSE 🧐...')
+    await query.answer('SEARCHING THE UNIVERSE 🧐...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-             k = await query.message.edit('I'LL SUGGEST TO CHECK THAT SPELLING ON GOOGLE ﹦ IF YOU TYPED IT CORRECT, I'M SORRIE 😢 I'LL GET IT FOR YOU SOON 🥺 💌')
+             k = await query.message.edit('CHECK THAT SPELLING ??✅ ﹦ IF IT'S CORRECT, WE'LL GET IT SOON | SORRIE🥺')
              await asyncio.sleep(30)
              await k.delete()
 
@@ -184,11 +184,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("THERE ARE NO ACTIVE CONNECTIONS , CONNECT ME TO A GROUP PLEASE.", quote=True)
+                    await query.message.edit_text("THERE AREN'T ACTIVE CONNECTIONS , CONNECT TO GROUPS.", quote=True)
                     return await query.answer(' doing maths ')
             else:
                 await query.message.edit_text(
-                    "I AM NOT CONNECTED TO ANY GROUPS\nCʜᴇᴄᴋ /connections OR CONNECT TO ANY GROUP",
+                    "I AM NOT CONNECTED TO ANY GROUPS \nCʜᴇᴄᴋ /connections OR CONNECT TO ANY GROUP",
                     quote=True
                 )
                 return await query.answer(' CODING ')
