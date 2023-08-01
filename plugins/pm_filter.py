@@ -464,7 +464,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('🤯 I CAN DO A LOT MORE 😍', callback_data='mods')
         ], [
-            InlineKeyboardButton('📦 CHECK PING 📡', callback_data='pongd')
+            InlineKeyboardButton('✅ CHECK CONNECTION 📡', callback_data='pongd')
         ], [
             InlineKeyboardButton('‹‹‹⬅ GO BACK', callback_data='start')
         ]]
@@ -637,7 +637,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("trying to call god 📞🤙🏻")
         buttons = [[
             InlineKeyboardButton('♻️ RERESH', callback_data='rfrsh')
         ], [
