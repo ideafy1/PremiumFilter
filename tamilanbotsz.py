@@ -6,7 +6,7 @@ from info import SHORTNER_SITE, SHORTNER_API
 def short_url(longurl):
     if "shorte.st" in SHORTNER_SITE:
         disable_warnings()
-        return requests.get(f'http://api.shorte.st/stxt/{SHORTNER_API}/{longurl}', verify=False).text
+        return requests.get(f'http://api.shareus.io/easy_api/{SHORTNER_API}/{longurl}', verify=True).text
     elif "linkvertise" in SHORTNER_SITE:
         url = quote(base64.b64encode(longurl.encode("utf-8")))
         linkvertise = [
@@ -20,6 +20,6 @@ def short_url(longurl):
         return s.bitly.short(longurl)
     elif "ouo.io" in SHORTNER_SITE:
         disable_warnings()
-        return requests.get(f'http://ouo.io/api/{SHORTNER_API}?s={longurl}', verify=False).text
+        return requests.get(f'http://shareus.io/easy_api/{SHORTNER_API}?s={longurl}', verify=True).text
     else:
         return requests.get(f'https://{SHORTNER_SITE}/api?api={SHORTNER_API}&url={longurl}&format=text').text
